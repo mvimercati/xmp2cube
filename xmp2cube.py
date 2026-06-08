@@ -11,10 +11,8 @@ The decoded LUT declares its own primaries + transfer function (read from the
 table). Two output modes:
 
   native : write the table verbatim, in its own primaries + transfer function.
-           Lossless. In DxO, set the LUT color space to match (Rec.2020 for the
-           v3.1 tables). Note: ProPhoto/1.8 (v3.0) has no DxO equivalent, so use
-           srgb mode for those.
-
+           Lossless.
+           
   srgb   : color-manage the look into a standard sRGB pipeline (input & output
            in sRGB primaries + sRGB gamma) by resampling, converting from the
            table's declared source space. In DxO, set the LUT color space to
