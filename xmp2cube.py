@@ -8,8 +8,7 @@ format: a zlib-compressed binary blob, text-encoded with a Z85-like base85
 variant. This tool decodes it and writes a .cube file.
 
 The decoded LUT declares its own primaries + transfer function (read from the
-table): Cobalt v3.1 presets are Rec.2020 / Rec.2020-gamma, while the v3.0
-(5DIV / R5II) presets are ProPhoto primaries / gamma 1.8. Two output modes:
+table). Two output modes:
 
   native : write the table verbatim, in its own primaries + transfer function.
            Lossless. In DxO, set the LUT color space to match (Rec.2020 for the
